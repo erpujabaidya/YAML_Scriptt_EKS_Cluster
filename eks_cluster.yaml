@@ -1,0 +1,11 @@
+---
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: my-demo-cluster
+  region: us-east-1
+
+managedNodeGroups:
+- name: my-demo-workers
+  instanceType: t2.large
+  desiredCapacity: 1
